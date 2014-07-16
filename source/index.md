@@ -1,5 +1,5 @@
 ---
-title: Travis Testing
+title: SNworks Developer Docs
 
 language_tabs:
   - code
