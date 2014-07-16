@@ -2,12 +2,11 @@
 title: Travis Testing
 
 language_tabs:
-  - shell
-  - ruby
-  - python
+  - code
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href="http://getsnworks.com">Main Site</a>
+  - <a href='http://confluence.getsnworks.com/display/ID/Internal+Documentation+Home'>SNworks Internal Docs</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -18,13 +17,102 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+SNworks Developer Docs.
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+#  Technologies we use
 
-This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+This information is on our <a href="http://confluence.getsnworks.com/display/ID/Documentation+Index">private help section</a>.
 
-# Authentication
+# Whaddya say?
+
+<aside class="notice">
+Learn the SNworks Lingo
+</aside>
+
+* **Apache** - Web server software
+* **AWS** - Amazon Web Services. This is the cloud architecture we run our services on.
+* **Bucket** - A top-level "folder" on S3.
+* **CDN** - Content Delivery Network. A series of servers around the globe that server static assets (like CSS files and site images)
+* **CloudFront** - The AWS CDN
+* **DNS** - Domain Name System. Essentially the internet phonebook. Matches IP addresses to human-readable domain names (e.g. statenews.com)
+* **EC2**  - Elastic Compute Cloud. Virtual servers
+* **Git** - The source control management tool we use to manage code changes
+* **HAProxy** - Software load balancer
+* **LESS** - LESS is a superset of CSS that allows for mixins and proper namespacing. It compiles down to plain old CSS.
+* **Load Balancer** - A server that redirects requests to multiple backend servers
+* **Production** - The live server cluster. Only a privileged few ever see the internals here.
+* **RDS** - Relational Database Service. Virtual database servers
+* **Route53** - AWS DNS service
+* **RTP** - Release(d) To Production. Code change has been queued for automatic deployment to production.
+* **S3** - Simple Storage Service. The place we store media files and static site assets.
+* **Stage** - The server cluster on which we test out new features and changes
+* **Unable to Repro** - Unable to reproduce the error/issue/bug/feature in the request. We cannot fix what we cannot reproduce.
+* **Varnish** - Cache server software
+* **WOC** - Waiting on client
+* **Won't Fix** - Error/issue/bug/feature is not an error, how the system normally functions and won't be addressed.
+
+# Bitbucket and Git
+## Overview
+```code
+# With code, you can just pass the correct header with each request
+curl "api_endpoint_here"
+  -H "Authorization: meowmeowmeow"
+```
+## Helpful Commands
+```code
+user> git checkout
+```
+checkout something
+
+# Dev Web Server
+
+More information on this in our <a href="#">private help docs</a>.
+
+# Coding Templates
+
+Overview
+
+## Fetch Statements
+
+# Coding for Gryphon
+
+## base.tpl
+
+## article/main.tpl
+
+## article/templates
+
+## author/main.tpl
+
+## blog/
+
+## gallery/
+
+## main/
+
+## multimedia/
+
+## page/
+
+## search/
+
+## section/
+
+## view/
+
+# Macros
+
+## article
+
+## disqus
+
+## render
+
+## tools
+
+# Gryphon CMS
+
+<!-- # Authentication
 
 > To authorize, use this code:
 
@@ -40,8 +128,8 @@ import 'kittn'
 api = Kittn.authorize('meowmeowmeow')
 ```
 
-```shell
-# With shell, you can just pass the correct header with each request
+```code
+# With code, you can just pass the correct header with each request
 curl "api_endpoint_here"
   -H "Authorization: meowmeowmeow"
 ```
@@ -76,7 +164,7 @@ api = Kittn.authorize('meowmeowmeow')
 api.kittens.get()
 ```
 
-```shell
+```code
 curl "http://example.com/api/kittens"
   -H "Authorization: meowmeowmeow"
 ```
@@ -135,7 +223,7 @@ api = Kittn.authorize('meowmeowmeow')
 api.kittens.get(2)
 ```
 
-```shell
+```code
 curl "http://example.com/api/kittens/3"
   -H "Authorization: meowmeowmeow"
 ```
@@ -164,5 +252,5 @@ This endpoint retrieves a specific kitten.
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the cat to retrieve
+ID | The ID of the cat to retrieve -->
 
