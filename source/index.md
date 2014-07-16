@@ -1,9 +1,6 @@
 ---
 title: SNworks Developer Docs
 
-language_tabs:
-  - code
-
 toc_footers:
   - <a href="http://getsnworks.com">Main Site</a>
   - <a href='http://confluence.getsnworks.com/display/ID/Internal+Documentation+Home'>SNworks Internal Docs</a>
@@ -16,6 +13,11 @@ search: true
 ---
 
 # Introduction
+
+```html
+# Code will show up over here.
+<a href="#">foo</a>
+```
 
 SNworks Developer Docs.
 
@@ -53,13 +55,18 @@ Learn the SNworks Lingo
 
 # Bitbucket and Git
 ## Overview
-```code
-# With code, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+
+```shell
+# Code sample here
 ```
+
+```html
+<a href="#">foo</a>
+```
+
 ## Helpful Commands
-```code
+
+```shell
 user> git checkout
 ```
 checkout something
@@ -75,6 +82,8 @@ Overview
 ## Fetch Statements
 
 # Coding for Gryphon
+
+Creating templates for Gryphon is fairly simple once you have the basics down.
 
 ## base.tpl
 
