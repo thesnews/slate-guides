@@ -11,11 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="javascripts/all.js" type="text/javascript"></script>
 
-      <script>
-        $(function() {
-          setupLanguages(["code"]);
-        });
-      </script>
   </head>
 
   <body class="index">
@@ -27,9 +22,6 @@
     </a>
     <div class="tocify-wrapper">
       <img src="images/logo.png" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="code">code</a>
-        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -45,7 +37,10 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
+        <h1 id='introduction'>Introduction</h1><pre class="highlight html"># Code will show up over here.
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>foo<span class="nt">&lt;/a&gt;</span>
+</pre>
+
 <p>SNworks Developer Docs.</p>
 <h1 id='technologies-we-use'>Technologies we use</h1>
 <p>This information is on our <a href="http://confluence.getsnworks.com/display/ID/Documentation+Index">private help section</a>.</p>
@@ -77,11 +72,11 @@ Learn the SNworks Lingo
 <li><strong>WOC</strong> - Waiting on client</li>
 <li><strong>Won&rsquo;t Fix</strong> - Error/issue/bug/feature is not an error, how the system normally functions and won&rsquo;t be addressed.</li>
 </ul>
-<h1 id='bitbucket-and-git'>Bitbucket and Git</h1><h2 id='overview'>Overview</h1><pre class="highlight plaintext"># With code, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+<h1 id='bitbucket-and-git'>Bitbucket and Git</h1><h2 id='overview'>Overview</h1><pre class="highlight shell"><span class="c"># Code sample here</span>
 </pre>
-<h2 id='helpful-commands'>Helpful Commands</h1><pre class="highlight plaintext">user&gt; git checkout
+<pre class="highlight html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>foo<span class="nt">&lt;/a&gt;</span>
+</pre>
+<h2 id='helpful-commands'>Helpful Commands</h1><pre class="highlight shell"><span class="gp">user&gt; </span>git checkout
 </pre>
 
 <p>checkout something</p>
@@ -89,7 +84,9 @@ curl "api_endpoint_here"
 <p>More information on this in our <a href="#">private help docs</a>.</p>
 <h1 id='coding-templates'>Coding Templates</h1>
 <p>Overview</p>
-<h2 id='fetch-statements'>Fetch Statements</h1><h1 id='coding-for-gryphon'>Coding for Gryphon</h1><h2 id='base-tpl'>base.tpl</h1><h2 id='articlemain-tpl'>article/main.tpl</h1><h2 id='articletemplates'>article/templates</h1><h2 id='authormain-tpl'>author/main.tpl</h1><h2 id='blog'>blog/</h1><h2 id='gallery'>gallery/</h1><h2 id='main'>main/</h1><h2 id='multimedia'>multimedia/</h1><h2 id='page'>page/</h1><h2 id='search'>search/</h1><h2 id='section'>section/</h1><h2 id='view'>view/</h1><h1 id='macros'>Macros</h1><h2 id='article'>article</h1><h2 id='disqus'>disqus</h1><h2 id='render'>render</h1><h2 id='tools'>tools</h1><h1 id='gryphon-cms'>Gryphon CMS</h1>
+<h2 id='fetch-statements'>Fetch Statements</h1><h1 id='coding-for-gryphon'>Coding for Gryphon</h1>
+<p>Creating templates for Gryphon is fairly simple once you have the basics down.</p>
+<h2 id='base-tpl'>base.tpl</h1><h2 id='articlemain-tpl'>article/main.tpl</h1><h2 id='articletemplates'>article/templates</h1><h2 id='authormain-tpl'>author/main.tpl</h1><h2 id='blog'>blog/</h1><h2 id='gallery'>gallery/</h1><h2 id='main'>main/</h1><h2 id='multimedia'>multimedia/</h1><h2 id='page'>page/</h1><h2 id='search'>search/</h1><h2 id='section'>section/</h1><h2 id='view'>view/</h1><h1 id='macros'>Macros</h1><h2 id='article'>article</h1><h2 id='disqus'>disqus</h1><h2 id='render'>render</h1><h2 id='tools'>tools</h1><h1 id='gryphon-cms'>Gryphon CMS</h1>
 <!-- # Authentication
 
 > To authorize, use this code:
@@ -291,9 +288,6 @@ ID | The ID of the cat to retrieve &ndash;>
 
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="code">code</a>
-          </div>
       </div>
     </div>
   </body>
