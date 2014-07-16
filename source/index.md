@@ -75,7 +75,7 @@ checkout something
 
 More information on this in our <a href="#">private help docs</a>.
 
-# Coding Templates
+# Template Coding Tips
 
 Overview
 
