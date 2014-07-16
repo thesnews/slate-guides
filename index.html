@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Travis Testing</title>
+    <title>SNworks Developer Docs</title>
 
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
@@ -13,7 +13,7 @@
 
       <script>
         $(function() {
-          setupLanguages(["shell","ruby","python"]);
+          setupLanguages(["code"]);
         });
       </script>
   </head>
@@ -28,9 +28,7 @@
     <div class="tocify-wrapper">
       <img src="images/logo.png" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="code">code</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -39,7 +37,8 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li><a href="http://getsnworks.com">Main Site</a></li>
+            <li><a href='http://confluence.getsnworks.com/display/ID/Internal+Documentation+Home'>SNworks Internal Docs</a></li>
             <li><a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -47,145 +46,191 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
-
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="http://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</pre>
-<pre class="highlight python"><span class="kn">import</span> <span class="s">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">Kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</pre>
-<pre class="highlight shell"><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</pre>
-
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
-
+<p>SNworks Developer Docs.</p>
+<h1 id='technologies-we-use'>Technologies we use</h1>
+<p>This information is on our <a href="http://confluence.getsnworks.com/display/ID/Documentation+Index">private help section</a>.</p>
+<h1 id='whaddya-say'>Whaddya say?</h1>
 <p><aside class="notice">
-You must replace <code class="prettyprint">meowmeowmeow</code> with your personal API key.
+Learn the SNworks Lingo
 </aside></p>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h1><pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
+<ul>
+<li><strong>Apache</strong> - Web server software</li>
+<li><strong>AWS</strong> - Amazon Web Services. This is the cloud architecture we run our services on.</li>
+<li><strong>Bucket</strong> - A top-level &ldquo;folder&rdquo; on S3.</li>
+<li><strong>CDN</strong> - Content Delivery Network. A series of servers around the globe that server static assets (like CSS files and site images)</li>
+<li><strong>CloudFront</strong> - The AWS CDN</li>
+<li><strong>DNS</strong> - Domain Name System. Essentially the internet phonebook. Matches IP addresses to human-readable domain names (e.g. statenews.com)</li>
+<li><strong>EC2</strong>  - Elastic Compute Cloud. Virtual servers</li>
+<li><strong>Git</strong> - The source control management tool we use to manage code changes</li>
+<li><strong>HAProxy</strong> - Software load balancer</li>
+<li><strong>LESS</strong> - LESS is a superset of CSS that allows for mixins and proper namespacing. It compiles down to plain old CSS.</li>
+<li><strong>Load Balancer</strong> - A server that redirects requests to multiple backend servers</li>
+<li><strong>Production</strong> - The live server cluster. Only a privileged few ever see the internals here.</li>
+<li><strong>RDS</strong> - Relational Database Service. Virtual database servers</li>
+<li><strong>Route53</strong> - AWS DNS service</li>
+<li><strong>RTP</strong> - Release(d) To Production. Code change has been queued for automatic deployment to production.</li>
+<li><strong>S3</strong> - Simple Storage Service. The place we store media files and static site assets.</li>
+<li><strong>Stage</strong> - The server cluster on which we test out new features and changes</li>
+<li><strong>Unable to Repro</strong> - Unable to reproduce the error/issue/bug/feature in the request. We cannot fix what we cannot reproduce.</li>
+<li><strong>Varnish</strong> - Cache server software</li>
+<li><strong>WOC</strong> - Waiting on client</li>
+<li><strong>Won&rsquo;t Fix</strong> - Error/issue/bug/feature is not an error, how the system normally functions and won&rsquo;t be addressed.</li>
+</ul>
+<h1 id='bitbucket-and-git'>Bitbucket and Git</h1><h2 id='overview'>Overview</h1><pre class="highlight plaintext"># With code, you can just pass the correct header with each request
+curl "api_endpoint_here"
+  -H "Authorization: meowmeowmeow"
 </pre>
-<pre class="highlight python"><span class="kn">import</span> <span class="s">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">Kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</pre>
-<pre class="highlight shell">curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+<h2 id='helpful-commands'>Helpful Commands</h1><pre class="highlight plaintext">user&gt; git checkout
 </pre>
 
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Isis"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></pre>
+<p>checkout something</p>
+<h1 id='dev-web-server'>Dev Web Server</h1>
+<p>More information on this in our <a href="#">private help docs</a>.</p>
+<h1 id='coding-templates'>Coding Templates</h1>
+<p>Overview</p>
+<h2 id='fetch-statements'>Fetch Statements</h1><h1 id='coding-for-gryphon'>Coding for Gryphon</h1><h2 id='base-tpl'>base.tpl</h1><h2 id='articlemain-tpl'>article/main.tpl</h1><h2 id='articletemplates'>article/templates</h1><h2 id='authormain-tpl'>author/main.tpl</h1><h2 id='blog'>blog/</h1><h2 id='gallery'>gallery/</h1><h2 id='main'>main/</h1><h2 id='multimedia'>multimedia/</h1><h2 id='page'>page/</h1><h2 id='search'>search/</h1><h2 id='section'>section/</h1><h2 id='view'>view/</h1><h1 id='macros'>Macros</h1><h2 id='article'>article</h1><h2 id='disqus'>disqus</h1><h2 id='render'>render</h1><h2 id='tools'>tools</h1><h1 id='gryphon-cms'>Gryphon CMS</h1>
+<!-- # Authentication
 
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h1>
-<p><code class="prettyprint">GET http://example.com/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h1>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
+> To authorize, use this code:
 
-<p><aside class="success">
+&ldquo;`ruby
+require &lsquo;kittn&rsquo;
+
+api = Kittn::APIClient.authorize!(&lsquo;meowmeowmeow&rsquo;)
+&rdquo;`
+
+&ldquo;`python
+import &lsquo;kittn&rsquo;
+
+api = Kittn.authorize(&lsquo;meowmeowmeow&rsquo;)
+&rdquo;`
+
+&ldquo;`code
+# With code, you can just pass the correct header with each request
+curl &quot;api_endpoint_here&rdquo;
+  -H &ldquo;Authorization: meowmeowmeow&rdquo;
+&ldquo;`
+
+> Make sure to replace `meowmeowmeow` with your API key.
+
+Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+
+Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+
+`Authorization: meowmeowmeow`
+
+<aside class="notice">
+You must replace `meowmeowmeow` with your personal API key.
+</aside>
+
+# Kittens
+
+## Get All Kittens
+
+&rdquo;`ruby
+require &lsquo;kittn&rsquo;
+
+api = Kittn::APIClient.authorize!(&lsquo;meowmeowmeow&rsquo;)
+api.kittens.get
+&ldquo;`
+
+&rdquo;`python
+import &lsquo;kittn&rsquo;
+
+api = Kittn.authorize(&lsquo;meowmeowmeow&rsquo;)
+api.kittens.get()
+&ldquo;`
+
+&rdquo;`code
+curl &ldquo;http://example.com/api/kittens&rdquo;
+  -H &ldquo;Authorization: meowmeowmeow&rdquo;
+&ldquo;`
+
+> The above command returns JSON structured like this:
+
+&rdquo;`json
+[
+  {
+    &ldquo;id&rdquo;: 1,
+    &ldquo;name&rdquo;: &ldquo;Fluffums&rdquo;,
+    &ldquo;breed&rdquo;: &ldquo;calico&rdquo;,
+    &ldquo;fluffiness&rdquo;: 6,
+    &ldquo;cuteness&rdquo;: 7
+  },
+  {
+    &ldquo;id&rdquo;: 2,
+    &ldquo;name&rdquo;: &ldquo;Isis&rdquo;,
+    &ldquo;breed&rdquo;: &ldquo;unknown&rdquo;,
+    &ldquo;fluffiness&rdquo;: 5,
+    &ldquo;cuteness&rdquo;: 10
+  }
+]
+&ldquo;`
+
+This endpoint retrieves all kittens.
+
+### HTTP Request
+
+`GET http://example.com/kittens`
+
+### Query Parameters
+
+Parameter | Default | Description
+&mdash;&mdash;&mdash; | &mdash;&mdash;- | &mdash;&mdash;&mdash;&ndash;
+include_cats | false | If set to true, the result will also include cats.
+available | true | If set to false, the result will include kittens that have already been adopted.
+
+<aside class="success">
 Remember — a happy kitten is an authenticated kitten!
-</aside></p>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h1><pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'kittn'</span>
+</aside>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre>
-<pre class="highlight python"><span class="kn">import</span> <span class="s">'kittn'</span>
+## Get a Specific Kitten
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">Kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre>
-<pre class="highlight shell">curl <span class="s2">"http://example.com/api/kittens/3"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</pre>
+&rdquo;`ruby
+require &lsquo;kittn&rsquo;
 
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Isis"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></pre>
+api = Kittn::APIClient.authorize!(&lsquo;meowmeowmeow&rsquo;)
+api.kittens.get(2)
+&ldquo;`
 
-<p>This endpoint retrieves a specific kitten.</p>
+&rdquo;`python
+import &lsquo;kittn&rsquo;
 
-<p><aside class="warning">If you&rsquo;re not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside></p>
-<h3 id='http-request'>HTTP Request</h1>
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h1>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the cat to retrieve</td>
-</tr>
-</tbody></table>
+api = Kittn.authorize(&lsquo;meowmeowmeow&rsquo;)
+api.kittens.get(2)
+&ldquo;`
+
+&rdquo;`code
+curl &ldquo;http://example.com/api/kittens/3&rdquo;
+  -H &ldquo;Authorization: meowmeowmeow&rdquo;
+&ldquo;`
+
+> The above command returns JSON structured like this:
+
+&rdquo;`json
+{
+  &ldquo;id&rdquo;: 2,
+  &ldquo;name&rdquo;: &ldquo;Isis&rdquo;,
+  &ldquo;breed&rdquo;: &ldquo;unknown&rdquo;,
+  &ldquo;fluffiness&rdquo;: 5,
+  &ldquo;cuteness&rdquo;: 10
+}
+&ldquo;`
+
+This endpoint retrieves a specific kitten.
+
+<aside class="warning">If you&rsquo;re not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside>
+
+### HTTP Request
+
+`GET http://example.com/kittens/<ID>`
+
+### URL Parameters
+
+Parameter | Description
+&mdash;&mdash;&mdash; | &mdash;&mdash;&mdash;&ndash;
+ID | The ID of the cat to retrieve &ndash;>
 
           <h1 id='errors'>Errors</h1>
 <p><aside class="notice">This error section is stored in a separate file in <code class="prettyprint">includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the <code class="prettyprint">includes</code> folder and add them to the top of your <code class="prettyprint">index.md</code>&rsquo;s frontmatter. Files are included in the order listed.</aside></p>
@@ -247,9 +292,7 @@ Remember — a happy kitten is an authenticated kitten!
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="code">code</a>
           </div>
       </div>
     </div>
