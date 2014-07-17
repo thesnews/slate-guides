@@ -5,7 +5,7 @@ toc_footers:
   - <a href="http://getsnworks.com">Main Site</a>
   - <a href='http://confluence.getsnworks.com/display/ID/Internal+Documentation+Home'>SNworks Internal Docs</a>
   - <a href="http://confluence.getsnworks.com">Client Support Docs</a>
-  - <a href="https://snworks-status.appspot.com/">System Status</a>
+  - <a href="http://uptime.getsnworks.com/">System Status</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
