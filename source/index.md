@@ -77,11 +77,56 @@ checkout something
 
 More information on this in our <a href="#">private help docs</a>.
 
-# Template Coding Tips
+# Twig Extensions and Tips
 
 Overview
 
-## Fetch Statements
+## Fetch Tag
+
+## Helper Tag
+
+> Load the config helper, and grab a value
+
+```html
+{% helper config %}
+{{ config.get('foo.bar') }}
+```
+
+> Load the config helper, but call it 'Configuration'
+
+```html
+{% helper config as Configuration %}
+{{ Configuration.get('foo.bar') }}
+```
+
+The helper tag loads Gryphon specific Twig helpers.
+
+Parameter | Description
+--------- | -----------
+as STRING | Provide an alternate name for the helper (OPTIONAL)
+
+## Config Helper
+
+```html
+{% helper config %}
+
+Welcome to <a href="{{config.get('publication.url)}}">{{config.get('publication.name')}}</a>
+```
+
+The config helper provides read access to the global configuration system. **This helper has only one method: `get`.**
+
+Common, but not all, config options used in templates:
+
+Config key | Description
+---------- | -----------
+publication.name | Yeah...
+publication.url | The canonical URL for the publication
+mail.admin | The default admin email address
+gryphon.media.meta | An array of meta properties
+gryphon.default.section | The section that constructs the front page
+gryphon.comments.disqus_shortname | The site's Disqus shortname
+
+## Request Helper
 
 # Coding for Gryphon
 
