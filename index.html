@@ -88,9 +88,77 @@ Learn the SNworks Lingo
 <p>checkout something</p>
 <h1 id='dev-web-server'>Dev Web Server</h1>
 <p>More information on this in our <a href="#">private help docs</a>.</p>
-<h1 id='template-coding-tips'>Template Coding Tips</h1>
+<h1 id='twig-extensions-and-tips'>Twig Extensions and Tips</h1>
 <p>Overview</p>
-<h2 id='fetch-statements'>Fetch Statements</h1><h1 id='coding-for-gryphon'>Coding for Gryphon</h1>
+<h2 id='fetch-tag'>Fetch Tag</h1><h2 id='helper-tag'>Helper Tag</h1>
+<blockquote>
+<p>Load the config helper, and grab a value</p>
+</blockquote>
+<pre class="highlight html">{% helper config %}
+{{ config.get('foo.bar') }}
+</pre>
+
+<blockquote>
+<p>Load the config helper, but call it &lsquo;Configuration&rsquo;</p>
+</blockquote>
+<pre class="highlight html">{% helper config as Configuration %}
+{{ Configuration.get('foo.bar') }}
+</pre>
+
+<p>The helper tag loads Gryphon specific Twig helpers.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>as STRING</td>
+<td>Provide an alternate name for the helper (OPTIONAL)</td>
+</tr>
+</tbody></table>
+<h2 id='config-helper'>Config Helper</h1><pre class="highlight html">{% helper config %}
+
+Welcome to <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{config.get('publication.url)}}"</span><span class="nt">&gt;</span>{{config.get('publication.name')}}<span class="nt">&lt;/a&gt;</span>
+</pre>
+
+<p>The config helper provides read access to the global configuration system. <strong>This helper has only one method: <code class="prettyprint">get</code>.</strong></p>
+
+<p>Common, but not all, config options used in templates:</p>
+
+<table><thead>
+<tr>
+<th>Config key</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>publication.name</td>
+<td>Yeah&hellip;</td>
+</tr>
+<tr>
+<td>publication.url</td>
+<td>The canonical URL for the publication</td>
+</tr>
+<tr>
+<td>mail.admin</td>
+<td>The default admin email address</td>
+</tr>
+<tr>
+<td>gryphon.media.meta</td>
+<td>An array of meta properties</td>
+</tr>
+<tr>
+<td>gryphon.default.section</td>
+<td>The section that constructs the front page</td>
+</tr>
+<tr>
+<td>gryphon.comments.disqus_shortname</td>
+<td>The site&rsquo;s Disqus shortname</td>
+</tr>
+</tbody></table>
+<h2 id='request-helper'>Request Helper</h1><h1 id='coding-for-gryphon'>Coding for Gryphon</h1>
 <p>Creating templates for Gryphon is fairly simple once you have the basics down.</p>
 <h2 id='base-tpl'>base.tpl</h1><h2 id='articlemain-tpl'>article/main.tpl</h1><h2 id='articletemplates'>article/templates</h1><h2 id='authormain-tpl'>author/main.tpl</h1><h2 id='blog'>blog/</h1><h2 id='gallery'>gallery/</h1><h2 id='main'>main/</h1><h2 id='multimedia'>multimedia/</h1><h2 id='page'>page/</h1><h2 id='search'>search/</h1><h2 id='section'>section/</h1><h2 id='view'>view/</h1><h1 id='macros'>Macros</h1><h2 id='article'>article</h1><h2 id='disqus'>disqus</h1><h2 id='render'>render</h1><h2 id='tools'>tools</h1><h1 id='gryphon-cms'>Gryphon CMS</h1>
 <!-- # Authentication
