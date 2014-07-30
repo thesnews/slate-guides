@@ -1,8 +1,9 @@
 ---
-title: SNworks Developer Docs
+title: SNworks Developer Docs for Guides
 
 toc_footers:
   - <a href="http://getsnworks.com">Main Site</a>
+  - <a href="http://thesnews.github.io/slate/">Gryphon Dev Docs</a>
   - <a href='http://confluence.getsnworks.com/display/ID/Internal+Documentation+Home'>SNworks Internal Docs</a>
   - <a href="http://confluence.getsnworks.com">Client Support Docs</a>
   - <a href="http://uptime.getsnworks.com/">System Status</a>
@@ -21,39 +22,15 @@ search: true
 <a href="#">foo</a>
 ```
 
-SNworks Developer Docs.
+SNworks Developer Docs for *Guides*. If you're looking for Gryphon docs, <a href="http://thesnews.github.io/slate/">look here</a>
+
+<aside class="notice">This only contains docs that **differ** from Gryphon.</aside>
+
 
 #  Technologies we use
 
 This information is on our <a href="http://confluence.getsnworks.com/display/ID/Documentation+Index">private help section</a>.
 
-# Whaddya say?
-
-<aside class="notice">
-Learn the SNworks Lingo
-</aside>
-
-* **Apache** - Web server software
-* **AWS** - Amazon Web Services. This is the cloud architecture we run our services on.
-* **Bucket** - A top-level "folder" on S3.
-* **CDN** - Content Delivery Network. A series of servers around the globe that server static assets (like CSS files and site images)
-* **CloudFront** - The AWS CDN
-* **DNS** - Domain Name System. Essentially the internet phonebook. Matches IP addresses to human-readable domain names (e.g. statenews.com)
-* **EC2**  - Elastic Compute Cloud. Virtual servers
-* **Git** - The source control management tool we use to manage code changes
-* **HAProxy** - Software load balancer
-* **LESS** - LESS is a superset of CSS that allows for mixins and proper namespacing. It compiles down to plain old CSS.
-* **Load Balancer** - A server that redirects requests to multiple backend servers
-* **Production** - The live server cluster. Only a privileged few ever see the internals here.
-* **RDS** - Relational Database Service. Virtual database servers
-* **Route53** - AWS DNS service
-* **RTP** - Release(d) To Production. Code change has been queued for automatic deployment to production.
-* **S3** - Simple Storage Service. The place we store media files and static site assets.
-* **Stage** - The server cluster on which we test out new features and changes
-* **Unable to Repro** - Unable to reproduce the error/issue/bug/feature in the request. We cannot fix what we cannot reproduce.
-* **Varnish** - Cache server software
-* **WOC** - Waiting on client
-* **Won't Fix** - Error/issue/bug/feature is not an error, how the system normally functions and won't be addressed.
 
 # Bitbucket and Git
 ## Overview
@@ -128,45 +105,11 @@ gryphon.comments.disqus_shortname | The site's Disqus shortname
 
 ## Request Helper
 
-# Coding for Gryphon
+# Coding for Guides
 
-Creating templates for Gryphon is fairly simple once you have the basics down.
+Creating templates for Guides is fairly simple once you have the basics down.
 
 ## base.tpl
-
-## article/main.tpl
-
-## article/templates
-
-## author/main.tpl
-
-## blog/
-
-## gallery/
-
-## main/
-
-## multimedia/
-
-## page/
-
-## search/
-
-## section/
-
-## view/
-
-# Macros
-
-## article
-
-## disqus
-
-## render
-
-## tools
-
-# Gryphon CMS
 
 <!-- # Authentication
 
