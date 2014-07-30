@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>SNworks Developer Docs</title>
+    <title>SNworks Developer Docs for Guides</title>
     <link rel="icon" type="image/png" href="images/favicon.ico">
 
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
@@ -31,6 +31,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href="http://getsnworks.com">Main Site</a></li>
+            <li><a href="http://thesnews.github.io/slate/">Gryphon Dev Docs</a></li>
             <li><a href='http://confluence.getsnworks.com/display/ID/Internal+Documentation+Home'>SNworks Internal Docs</a></li>
             <li><a href="http://confluence.getsnworks.com">Client Support Docs</a></li>
             <li><a href="http://uptime.getsnworks.com/">System Status</a></li>
@@ -47,37 +48,11 @@
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>foo<span class="nt">&lt;/a&gt;</span>
 </pre>
 
-<p>SNworks Developer Docs.</p>
+<p>SNworks Developer Docs for <em>Guides</em>. If you&rsquo;re looking for Gryphon docs, <a href="http://thesnews.github.io/slate/">look here</a></p>
+
+<p><aside class="notice">This only contains docs that <strong>differ</strong> from Gryphon.</aside></p>
 <h1 id='technologies-we-use'>Technologies we use</h1>
 <p>This information is on our <a href="http://confluence.getsnworks.com/display/ID/Documentation+Index">private help section</a>.</p>
-<h1 id='whaddya-say'>Whaddya say?</h1>
-<p><aside class="notice">
-Learn the SNworks Lingo
-</aside></p>
-
-<ul>
-<li><strong>Apache</strong> - Web server software</li>
-<li><strong>AWS</strong> - Amazon Web Services. This is the cloud architecture we run our services on.</li>
-<li><strong>Bucket</strong> - A top-level &ldquo;folder&rdquo; on S3.</li>
-<li><strong>CDN</strong> - Content Delivery Network. A series of servers around the globe that server static assets (like CSS files and site images)</li>
-<li><strong>CloudFront</strong> - The AWS CDN</li>
-<li><strong>DNS</strong> - Domain Name System. Essentially the internet phonebook. Matches IP addresses to human-readable domain names (e.g. statenews.com)</li>
-<li><strong>EC2</strong>  - Elastic Compute Cloud. Virtual servers</li>
-<li><strong>Git</strong> - The source control management tool we use to manage code changes</li>
-<li><strong>HAProxy</strong> - Software load balancer</li>
-<li><strong>LESS</strong> - LESS is a superset of CSS that allows for mixins and proper namespacing. It compiles down to plain old CSS.</li>
-<li><strong>Load Balancer</strong> - A server that redirects requests to multiple backend servers</li>
-<li><strong>Production</strong> - The live server cluster. Only a privileged few ever see the internals here.</li>
-<li><strong>RDS</strong> - Relational Database Service. Virtual database servers</li>
-<li><strong>Route53</strong> - AWS DNS service</li>
-<li><strong>RTP</strong> - Release(d) To Production. Code change has been queued for automatic deployment to production.</li>
-<li><strong>S3</strong> - Simple Storage Service. The place we store media files and static site assets.</li>
-<li><strong>Stage</strong> - The server cluster on which we test out new features and changes</li>
-<li><strong>Unable to Repro</strong> - Unable to reproduce the error/issue/bug/feature in the request. We cannot fix what we cannot reproduce.</li>
-<li><strong>Varnish</strong> - Cache server software</li>
-<li><strong>WOC</strong> - Waiting on client</li>
-<li><strong>Won&rsquo;t Fix</strong> - Error/issue/bug/feature is not an error, how the system normally functions and won&rsquo;t be addressed.</li>
-</ul>
 <h1 id='bitbucket-and-git'>Bitbucket and Git</h1><h2 id='overview'>Overview</h1><pre class="highlight shell"><span class="c"># Code sample here</span>
 </pre>
 <pre class="highlight html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>foo<span class="nt">&lt;/a&gt;</span>
@@ -158,9 +133,9 @@ Welcome to <span class="nt">&lt;a</span> <span class="na">href=</span><span clas
 <td>The site&rsquo;s Disqus shortname</td>
 </tr>
 </tbody></table>
-<h2 id='request-helper'>Request Helper</h1><h1 id='coding-for-gryphon'>Coding for Gryphon</h1>
-<p>Creating templates for Gryphon is fairly simple once you have the basics down.</p>
-<h2 id='base-tpl'>base.tpl</h1><h2 id='articlemain-tpl'>article/main.tpl</h1><h2 id='articletemplates'>article/templates</h1><h2 id='authormain-tpl'>author/main.tpl</h1><h2 id='blog'>blog/</h1><h2 id='gallery'>gallery/</h1><h2 id='main'>main/</h1><h2 id='multimedia'>multimedia/</h1><h2 id='page'>page/</h1><h2 id='search'>search/</h1><h2 id='section'>section/</h1><h2 id='view'>view/</h1><h1 id='macros'>Macros</h1><h2 id='article'>article</h1><h2 id='disqus'>disqus</h1><h2 id='render'>render</h1><h2 id='tools'>tools</h1><h1 id='gryphon-cms'>Gryphon CMS</h1>
+<h2 id='request-helper'>Request Helper</h1><h1 id='coding-for-guides'>Coding for Guides</h1>
+<p>Creating templates for Guides is fairly simple once you have the basics down.</p>
+<h2 id='base-tpl'>base.tpl</h1>
 <!-- # Authentication
 
 > To authorize, use this code:
